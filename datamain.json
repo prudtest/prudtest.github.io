@@ -1,0 +1,266 @@
+[
+  {
+    "name": "Electric Power Generation, Transmission and Distribution",
+    "firms": 1810,
+    "estab": 10602,
+    "emp": 512381,
+    "payroll": 50744667,
+    "income": 99036.98
+  },
+  {
+    "name": "Construction",
+    "firms": 646433,
+    "estab": 658483,
+    "emp": 5470181,
+    "payroll": 293999490,
+    "income": 53745.84
+  },
+  {
+    "name": "Manufacturing",
+    "firms": 251857,
+    "estab": 292094,
+    "emp": 11276438,
+    "payroll": 611831529,
+    "income": 54257.52
+  },
+  {
+    "name": "Food Manufacturing",
+    "firms": 21230,
+    "estab": 25267,
+    "emp": 1413977,
+    "payroll": 56409400,
+    "income": 39894.14
+  },
+  {
+    "name": "Textile Mills",
+    "firms": 2347,
+    "estab": 2591,
+    "emp": 104833,
+    "payroll": 4138848,
+    "income": 39480.39
+  },
+  {
+    "name": "Printing",
+    "firms": 23941,
+    "estab": 25037,
+    "emp": 434819,
+    "payroll": 18479194,
+    "income": 42498.59
+  },
+  {
+    "name": "Agriculture, Construction, and Mining Machinery Manufacturing",
+    "firms": 2697,
+    "estab": 3085,
+    "emp": 214780,
+    "payroll": 11789291,
+    "income": 54890.08
+  },
+  {
+    "name": "Power Generation and  Transmission Equipment Manufacturing",
+    "firms": 870,
+    "estab": 1067,
+    "emp": 102341,
+    "payroll": 6059838,
+    "income": 59212.22
+  },
+  {
+    "name": "Computer and Electronic Product Manufacturing",
+    "firms": 11462,
+    "estab": 12948,
+    "emp": 842769,
+    "payroll": 64731911,
+    "income": 76808.6
+  },
+  {
+    "name": "Communications Equipment Manufacturing",
+    "firms": 1300,
+    "estab": 1424,
+    "emp": 103352,
+    "payroll": 9364285,
+    "income": 90605.75
+  },
+  {
+    "name": "Motor Vehicle Manufacturing",
+    "firms": 280,
+    "estab": 331,
+    "emp": 161433,
+    "payroll": 12024618,
+    "income": 74486.74
+  },
+  {
+    "name": "Aerospace Product and Parts Manufacturing",
+    "firms": 1343,
+    "estab": 1740,
+    "emp": 399877,
+    "payroll": 34054956,
+    "income": 85163.58
+  },
+  {
+    "name": "Aircraft Manufacturing",
+    "firms": 241,
+    "estab": 293,
+    "emp": 159032,
+    "payroll": 14550621,
+    "income": 91494.93
+  },
+  {
+    "name": "Ship Building and Repairing",
+    "firms": 599,
+    "estab": 683,
+    "emp": 106627,
+    "payroll": 6399714,
+    "income": 60019.64
+  },
+  {
+    "name": "Department Stores",
+    "firms": 24,
+    "estab": 8102,
+    "emp": 1036757,
+    "payroll": 19522833,
+    "income": 18830.67
+  },
+  {
+    "name": "Pet and Pet Supplies Stores",
+    "firms": 5148,
+    "estab": 8925,
+    "emp": 104057,
+    "payroll": 2064035,
+    "income": 19835.62
+  },
+  {
+    "name": "Information",
+    "firms": 71920,
+    "estab": 135627,
+    "emp": 3266084,
+    "payroll": 273296751,
+    "income": 83677.2
+  },
+  {
+    "name": "Software Publishers",
+    "firms": 6021,
+    "estab": 8912,
+    "emp": 428030,
+    "payroll": 58877528,
+    "income": 137554.68
+  },
+  {
+    "name": "Broadcasting (except Internet)",
+    "firms": 4667,
+    "estab": 9624,
+    "emp": 278647,
+    "payroll": 21687867,
+    "income": 77832.77
+  },
+  {
+    "name": "Telecommunications",
+    "firms": 8564,
+    "estab": 48180,
+    "emp": 1066950,
+    "payroll": 74909799,
+    "income": 70209.29
+  },
+  {
+    "name": "Data Processing, Hosting, and Related Services",
+    "firms": 9510,
+    "estab": 14276,
+    "emp": 488879,
+    "payroll": 43019904,
+    "income": 87997.04
+  },
+  {
+    "name": "Internet Publishing and Broadcasting and Web Search Portals",
+    "firms": 5950,
+    "estab": 7238,
+    "emp": 176292,
+    "payroll": 30985598,
+    "income": 175762.93
+  },
+  {
+    "name": "Real Estate",
+    "firms": 250612,
+    "estab": 302374,
+    "emp": 1439426,
+    "payroll": 66724176,
+    "income": 46354.71
+  },
+  {
+    "name": "Legal Services",
+    "firms": 177112,
+    "estab": 187216,
+    "emp": 1166997,
+    "payroll": 96065868,
+    "income": 82318.86
+  },
+  {
+    "name": "Engineering Services",
+    "firms": 45267,
+    "estab": 57563,
+    "emp": 1028083,
+    "payroll": 88320616,
+    "income": 85908.06
+  },
+  {
+    "name": "Computer Systems Design and Related Services",
+    "firms": 114571,
+    "estab": 132377,
+    "emp": 1586332,
+    "payroll": 143923416,
+    "income": 90727.17
+  },
+  {
+    "name": "Veterinary Services",
+    "firms": 27949,
+    "estab": 30347,
+    "emp": 316810,
+    "payroll": 10839338,
+    "income": 34214
+  },
+  {
+    "name": "Security Systems Services",
+    "firms": 9279,
+    "estab": 10661,
+    "emp": 125261,
+    "payroll": 5812147,
+    "income": 46400.29
+  },
+  {
+    "name": "Colleges, Universities, and Professional Schools",
+    "firms": 2391,
+    "estab": 4605,
+    "emp": 1827587,
+    "payroll": 70908162,
+    "income": 38798.79
+  },
+  {
+    "name": "Health Care and Social Assistance",
+    "firms": 646773,
+    "estab": 843603,
+    "emp": 18598711,
+    "payroll": 832306942,
+    "income": 44750.79
+  },
+  {
+    "name": "Performing Arts Companies",
+    "firms": 8585,
+    "estab": 8725,
+    "emp": 117927,
+    "payroll": 4132402,
+    "income": 35042.03
+  },
+  {
+    "name": "Gambling Industries",
+    "firms": 1967,
+    "estab": 2893,
+    "emp": 164250,
+    "payroll": 5066056,
+    "income": 30843.57
+  },
+  {
+    "name": "Casino Hotels",
+    "firms": 234,
+    "estab": 372,
+    "emp": 400035,
+    "payroll": 13142458,
+    "income": 32853.27
+  }
+]

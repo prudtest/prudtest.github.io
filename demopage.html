@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        
+        <!-- Making the mobile view not so bad -->
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- Some other attibutes for the project -->
+        <meta charset="utf-8">
+        <meta name="description" content="Prudan Website - DemoPage">
+        <meta name="author" content="Hany Bassily">
+        
+        <title>PrudAn: Product Demo</title>
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        
+        <!-- Styling links -->
+        <link href="../css/styles.css" rel="stylesheet"/>
+        <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="DataTables/datatables.css"/>
+        
+        <!-- Some google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Stalinist+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        
+        <!-- Pachage Scripts -->
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/d3.js"></script>
+        <script src="/js/d3.min.js"></script>
+        <script src="/js/d3.tip.v0.6.3.js"></script>
+        <script type="text/javascript" src="DataTables/datatables.js"></script>
+        
+        <!--Custom Script -->
+        <script src="/js/scripts.js"></script>
+        
+        
+    </header>
+    
+    <body>
+        <ul class="nav-bar">
+            <li><a class="active" href="/">Home</a></li>
+            <li><a class="active" href="#marketing">Marketing Analysis</a></li>
+            <li><a class="active" href="#supplychain">Supply Chain Management Analysis</a></li>
+        </ul>
+        <div class="fixed-header">
+            <div class="custom-header">
+                    <div class="company">PrudAn</div>
+            </div>    
+        </div>
+        
+        <!-- Marketing -->
+        <div class="page-content" id="marketing">
+            <div class="divheader">Marketing Analysis Reports:</div>
+                <div class="container-fluid reports">
+                    <div class="row">
+                        <div class="col-md-3 container text-center" id="category1">
+                            <h3>Financial</h3>
+                        </div>
+                        <div class="col-md-3 container text-center" id="category2">
+                            <h3>Inventory</h3>
+                        </div>
+                        <div class="col-md-3 container text-center" id="category3">
+                            <h3>Sales</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 product-item">
+                            <img src="../img/Means.jpg" class="img-responsive">
+                            <a href="#report1" id="rep1link" class="productlink">
+                                <h3>Sales Revenue Analysis</h3>
+                                <p>This is a small description for the first product. A short note about the main product features 
+                                    will be inserted in this section. Also it will include a sentence about the value added by this product</p>
+                                <h4>Click for more details</h4>
+                            </a>
+                        </div>
+                        <!--<div class="col-md-3 product-item">
+                            <img src="../img/Mission.jpg" class="img-responsive">
+                            <a href="#report2" class="productlink">
+                                <h3>Regional Sales</h3>
+                                <p>This is a small description for the second product. A short note about the main product features 
+                                    will be inserted in this section. Also it will include a sentence about the value added by this product</p>
+                                <h4>Click for more details</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-3 product-item">
+                            <img src="../img/strategy.jpg" class="img-responsive">
+                            <a href="#report3" class="productlink">
+                                <h3>Inventory Status</h3>
+                                <p>This is a small description for the third product. A short note about the main product features 
+                                    will be inserted in this section. Also it will include a sentence about the value added by this product</p>
+                                <h4>Click for more details</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 product-item">
+                            <img src="../img/whoWeAre.jpg" class="img-responsive">
+                            <a href="#report4" class="productlink">
+                                <h3>Revenue Growth Analysis</h3>
+                                <p>This is a small description for the first product. A short note about the main product features 
+                                will be inserted in this section. Also it will include a sentence about the value added by this product</p>
+                                <h4>Click for more details</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-3 product-item">
+                            <img src="../img/Means.jpg" class="img-responsive">
+                            <a href="#report5" class="productlink">
+                                <h3>Sales Person Reports</h3>
+                                <p>This is a small description for the first product. A short note about the main product features 
+                                will be inserted in this section. Also it will include a sentence about the value added by this product</p>
+                                <h4>Click for more details</h4>
+                            </a>
+                        </div> -->
+                        <div class="col-md-3 product-item">
+                            <img src="../img/Mission.jpg" class="img-responsive">
+                            <a href="#report6" class="productlink">
+                                <h3>Inventory vs. Sales</h3>
+                                <p>Analyze the performance of the inventory in satisfying the salees requirements. It includes the 
+                                option to analyze either on monthly or quarterly basis. Also the option to include the sales forecast</p>
+                                <h4>Click for more details</h4>
+                            </a>
+                        </div>
+                    <!--</div>
+                    <div class="row">-->
+                        <div class="col-md-3 product-item">
+                            <img src="../img/strategy.jpg" class="img-responsive">
+                            <a href="#report7" class="productlink">
+                                <h3>Yearly Sales Comparison</h3>
+                                <p>Compare between sales figures for the current year and any available past year on a quarterly basis. 
+                                Comparison is done on the customer level for the total sales in first quarter.</p>
+                                <h4>Go to the report form</h4>
+                            </a>
+                        </div>
+                        <!--<div class="col-md-3 product-item">
+                            <img src="../img/whoWeAre.jpg" class="img-responsive">
+                            <a href="#report8" class="productlink">
+                                <h3>Product Sales Analysis</h3>
+                                <p>This is a small description for the first product. A short note about the main product features 
+                                will be inserted in this section. Also it will include a sentence about the value added by this product</p>
+                                <h4>Click for more details</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-3 product-item">
+                            <img src="../img/whoWeAre.jpg" class="img-responsive">
+                            <a href="#report9" class="productlink">
+                                <h3>Inventory Movement Analysis</h3>
+                                <p>This is a small description for the first product. A short note about the main product features 
+                                will be inserted in this section. Also it will include a sentence about the value added by this product</p>
+                                <h4>Click for more details</h4>
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Supply Chain Management -->
+        <div class="page-content" id="supplychain">
+            <div class="divheader">Supply Chain Management Analysis:</div>
+            <div id="intro">This page is a general information service by the site. It includes information about the industrial sector in the US collected from the United States Census Bureau 
+            (www.census.gov). The information includes the total number of firms, establishments, workforce and payroll data. Some interesting information (the average income as an example) can be derived from this data.
+            To toggle the list of industries and display the graph, 
+            <button id="clickme">Click HERE</button>.</div>
+            <div id="companel" class="container">
+                <h4>List of Industries:</h4>
+                <div class="col-md-6 industry-list">
+                    <ul>
+                        <li>Electric Power Generation, Transmission and Distribution</li>
+                        <li>Construction</li>
+                        <li>Manufacturing</li>
+                        <li>Food Manufacturing</li>
+                        <li>Textile Mills</li>
+                        <li>Printing</li>
+                        <li>Agriculture, Construction, and Mining Machinery Manufacturing</li>
+                        <li>Power Generation and  Transmission Equipment Manufacturing</li>
+                        <li>Computer and Electronic Product Manufacturing</li>
+                        <li>Communications Equipment Manufacturing</li>
+                        <li>Motor Vehicle Manufacturing</li>
+                        <li>Aerospace Product and Parts Manufacturing</li>
+                        <li>Aircraft Manufacturing</li>
+                        <li>Ship Building and Repairing</li>
+                        <li>Department Stores</li>
+                        <li>Pet and Pet Supplies Stores</li>
+                        <li>Information</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 industry-list">
+                    <ul>
+                        <li>Software Publishers</li>
+                        <li>Broadcasting (except Internet)</li>
+                        <li>Telecommunications</li>
+                        <li>Data Processing, Hosting, and Related Services</li>
+                        <li>Internet Publishing and Broadcasting and Web Search Portals</li>
+                        <li>Real Estate</li>
+                        <li>Legal Services</li>
+                        <li>Engineering Services</li>
+                        <li>Computer Systems Design and Related Services</li>
+                        <li>Veterinary Services</li>
+                        <li>Security Systems Services</li>
+                        <li>Colleges, Universities, and Professional Schools</li>
+                        <li>Health Care and Social Assistance</li>
+                        <li>Performing Arts Companies</li>
+                        <li>Gambling Industries</li>
+                        <li>Casino Hotels</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="grapharea">
+                <div class="chart"></div>
+            </div>
+            <div class="explain">
+                <div class="maindesc" id="varsec">
+                    <h3>Number of Firms:</h3>
+                    <p>This graph presents the total number of firms. It is important to note that not only this factor should be 
+                    considered as indicator as it is strongly dependant on the type of the activity and does not refect the actual investement</p>
+                </div>
+                <div class="selector">
+                    <h4>Selections:</h4>
+                    <div class="btn-group btn-group-justified">
+                        <div class="btn-group">
+                            <button type="button" id="main" class="btn btn-default btn-block" onclick="updateData(this.id)">Number of Firms</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" id="first" class="btn btn-default btn-block" onclick="updateData(this.id)">Establishments</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" id="second" class="btn btn-default btn-block" onclick="updateData(this.id)">Total Employment</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" id="third" class="btn btn-default btn-block" onclick="updateData(this.id)">Total Payroll</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" id="fourth" class="btn btn-default btn-block" onclick="updateData(this.id)">Average income</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- D3 Drawing script -->
+            <script src="/js/bars2.js"></script>
+        </div>
+    </body>
+    
+    <!-- Demonstration Modules
+    -------------------------->
+    
+    <!-----REPORT 1:-->
+    
+    <div id="report1" class='modalDialog'>
+        <div class="reportcontent" id ="track1">
+            
+            <!---------------------- REPORT HEADER  ----------------------->
+            
+		    <h2>Revenue Analysis</h2>
+		    <h3>Description:</h3>
+		    <p>This report presents an analysis of the sales revenue. It presents a compariosn between the sales gross income and the product cost as well as the net revenue after deducing
+		    the product costs from the gross revenue. It is performing on different analysis elements including the customer, product, location and sales manager. It also presents a comparison
+		    between the sales achieved and the tatget sales per location and sales manager for any pre-selected time period.</p>
+		    
+		    <!----------------------- OPTIONS SELECTIONS ----------------->
+		    
+		    <div class="reportOptions">
+		        <h3>Selections:</h3>
+		        <form id="report1Selection1">
+		           <div class="row">
+		                <div class="col-md-4">
+		                    <p>Period Options:</label></p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-md-6">
+		                    <div id="permonth1">
+		                        <input type="radio" name="frequency1" id="mon1" checked>Per Month<br>
+                            </div>
+		                </div>
+		                <div class="col-md-6">
+		                    <div id="perquarter1">
+		                        <input type="radio" name="frequency1" id="quar1" >Per quarter<br>
+                            </div>
+		                </div>
+		            </div>
+		            <div class = "row">
+		                <div class="col-md-6">
+                            <select name="month1" id="month1">
+                                <option value="jan">January</option>
+                                <option value="feb">February</option>
+                                <option value="mar">March</option>
+                                <option value="apr">April</option>
+                                <option value="may">May</option>
+                                <option value="jun">June</option>
+                                <option value="jul">July</option>
+                                <option value="aug">August</option>
+                                <option value="sep">September</option>
+                                <option value="oct">October</option>
+                                <option value="nov">November</option>
+                                <option value="dec">December</option>
+                            </select>
+                        </div>
+                        <div class = "col-md-6">
+		                    <select name="quarter1" id="quart1">
+                                 <option value="q1">First Quarter</option>
+                                 <option value="q2">Second Quarter</option>
+                                 <option value="q3">Third Quarter</option>
+                                 <option value="q4">Fourth Quarter</option>
+                            </select>
+		                </div>
+		            </div>
+		        </form>
+		        <div class="row" id = "repor1RunOptions">
+		                <div class="col-md-4">
+		                    <p>Run Options:</label></p>
+		                </div>
+		            </div>
+		        <div class="execute">
+		            <div class="btn-group btn-group-justified">
+		                <div class="btn-group">
+		                    <button type="button" id="run11" class="btn btn-default btn-lg btn-block mainbutton">Customer</button>
+	                    </div>
+	                    <div class="btn-group">
+		                    <button type="button" id="run12" class="btn btn-default btn-lg btn-block mainbutton">Product</button>
+	                    </div>
+	                    <div class="btn-group">
+		                    <button type="button" id="run13" class="btn btn-default btn-lg btn-block mainbutton">Location</button>
+	                    </div>
+	                    <div class="btn-group">
+		                    <button type="button" id="run14" class="btn btn-default btn-lg btn-block mainbutton">Sales Manager</button>
+	                    </div>
+	                    <div class="btn-group">
+		                    <button type="button" id="run15" class="btn btn-default btn-lg btn-block mainbutton">Overall</button>
+	                    </div>
+                    </div>
+                </div>
+		    </div>
+		    
+		     <!-------------------- RESULTS DISPLAY ------------------------------>
+		    <div id = "selection-anchor1"></div>
+		    <div class="selectionControl">
+		        <h3></h3>
+		        <div class="graphtype">
+    		       <div class = "btn-group btn-group-justified" id = "graphbuttons1">
+    		           <div class = "btn-group">
+    		               <button type="button" id="fore1" class="btn btn-default">Add Forecast</button>
+		               </div>
+    		           <div class = "btn-group">
+    		               <button type="button" id="gr12" class="btn btn-default">Hide Profit</button>
+		               </div>
+		               <div class = "btn-group">
+    		               <button type="button" id="gr11" class="btn btn-default">Hide Revenue</button>
+		               </div>
+		               <div class = "btn-group" id="targ13">
+    		               <button type="button" id="gr13" class="btn btn-default">Hide Targets</button>
+		               </div>
+	               </div>
+        		</div>
+		    </div>
+		    <div id="reportGraph12">
+                <div class="graph12"></div>
+            </div>
+            <div id="reportGraph11">
+                <div class="graph11"></div>
+            </div>
+            <div id="reportGraph13">
+                <div class="graph13"></div>
+            </div>
+		    <div class="resultTable1">
+                <table id="result1" class="display" width="90%"></table>
+		    </div>
+		    <div class="reset">
+                <button type="button" id="reset1" class="btn btn-default btn-lg btn-block mainbutton">Reset Report</button>
+            </div>
+		    
+		    <!--Report specific script -->
+		    <script src="js/report1.js"></script>
+		    <script src="js/report1_1.js"></script>
+		    
+		    <!-------------------- END OF REPORT --------------------------------->
+		    
+		    <div class="container formclosure">
+		        <a href="#close" title="Close" id="closeb1" class="button">Close</a>
+		    </div>
+		    
+	    </div>
+    </div>
+    
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------>
+     
+    <!-----REPORT 2:-->
+    
+    <div id="report2" class='modalDialog'>
+        <div class="reportcontent">
+		    <h2>Modal Box 2</h2>
+		    <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+		    <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+		    <div class="container formclosure">
+		        <a href="#close" title="Close" id="closeb2" class="button">close</a>
+		    </div>
+	    </div>
+    </div>
+    
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------>
+     
+    <!-----REPORT 3:-->
+    
+    <div id="report3" class='modalDialog'>
+        <div class="reportcontent">
+		    <h2>Modal Box 3</h2>
+		    <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+		    <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+		    <div class="container formclosure">
+		        <a href="#close" title="Close" id="closeb3" class="button">close</a>
+		    </div>
+	    </div>
+    </div>
+    
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------>
+     
+    <!-----REPORT 4:--> 
+    
+    <div id="report4" class='modalDialog'>
+        <div class="reportcontent">
+		    <h2>Modal Box 4</h2>
+		    <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+		    <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+		    <div class="container formclosure">
+		        <a href="#close" title="Close" id="closeb4" class="button">close</a>
+		    </div>
+	    </div>
+    </div>
+    
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------>
+    
+    <!-----REPORT 5:-->
+    
+    <div id="report5" class='modalDialog'>
+        <div class="reportcontent">
+		    <h2>Modal Box 5</h2>
+		    <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+		    <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+		    <div class="container formclosure">
+		        <a href="#close" title="Close" id="closeb5" class="button">close</a>
+		    </div>
+	    </div>
+    </div>
+    
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------>
+    
+    <!-----REPORT 6:-->
+    
+    <div id="report6" class='modalDialog'>
+        <div class="reportcontent" id ="track6">
+            
+            <!---------------------- REPORT HEADER  ----------------------->
+            
+		    <h2>Inventory Performance vs. Sales</h2>
+		    <h3>Description:</h3>
+		    <p>This report presents an analysis of the performance of the inventory to meet the sales demand. The report presents two types of graphs.
+		    A graph representing the demand and available quantities side by side and another graph to demonstrate the difference between the inventory and
+		    sales demand. In both cases, the sales forecast quantity can be added to the sales quantity as an option</p>
+		    
+		    <!----------------------- OPTIONS SELECTIONS ----------------->
+            
+            <div class="reportOptions">
+		        <h3>Selections:</h3>
+		        <form id="report6Selection">
+		           <div class="row">
+		                <div class="col-md-4">
+		                    <p>Analysis Options:</label></p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-md-4">
+		                    <div id="permonth">
+		                        <input type="radio" name="frequency" id="mon" checked>Per Month<br>
+                            </div>
+		                </div>
+		                <div class="col-md-4">
+		                    <div id="perquarter">
+		                        <input type="radio" name="frequency" id="quar" >Per quarter<br>
+                            </div>
+		                </div>
+		                <div class="col-md-4">
+		                    <div id="graphselector">Select a graph Type:
+                            </div>
+		                </div>
+		            </div>
+		            <div class = "row">
+		                <div class="col-md-4">
+                            <select name="month" id="month">
+                                <option value="jan">January</option>
+                                <option value="feb">February</option>
+                                <option value="mar">March</option>
+                                <option value="apr">April</option>
+                                <option value="may">May</option>
+                                <option value="jun">June</option>
+                                <option value="jul">July</option>
+                                <option value="aug">August</option>
+                                <option value="sep">September</option>
+                                <option value="oct">October</option>
+                                <option value="nov">November</option>
+                                <option value="dec">December</option>
+                            </select>
+                        </div>
+                        <div class = "col-md-4">
+		                    <select name="quarter" id="quart">
+                                 <option value="q1">First Quarter</option>
+                                 <option value="q2">Second Quarter</option>
+                                 <option value="q3">Third Quarter</option>
+                                 <option value="q4">Fourth Quarter</option>
+                            </select>
+		                </div>
+		                <div class="col-md-4">
+		                    <div id="graphselect">
+		                        <input type="checkbox" name="grgraph" id="group" checked> Actual values<br>
+                                <input type="checkbox" name="difgraph" id="diff" checked> Difference<br>
+		                    </div>
+		                </div>
+		            </div>
+		        </form>
+		        <div class="execute">
+                    <button type="button" id="run6" class="btn btn-default btn-lg btn-block mainbutton">Run Report</button>
+                </div>
+		    </div>
+		    
+		    <!-------------------- RESULTS DISPLAY ------------------------------>
+		    <div id = "selection-anchor"></div>
+		    <div class="forecastControl">
+		        <h3>Sales Forecast Option:</h3>
+		        <div class="row graphtype">
+		            <div class="col-md-6">
+        		        <input type="radio" name="includeForecast" id="exclude" checked> Without Sales Forecast <br>
+        		    </div>
+        		    <div class="col-md-6">
+        		        <input type="radio" name="includeForecast" id="include"> With Sales Forecast <br>
+        		    </div>
+        		</div>
+		    </div>
+		    <div id="reportGraph61">
+                <div class="graph61"></div>
+            </div>
+            <div id="reportGraph62">
+                <div class="graph62"></div>
+            </div>
+		    <div class="resultTable6">
+                <table id="result6" class="display" width="90%"></table>
+		    </div>
+		    <div class="reset">
+                <button type="button" id="reset6" class="btn btn-default btn-lg btn-block mainbutton">Reset Report</button>
+            </div>
+		    
+		    <!--Report specific script -->
+		    <script src="js/report6.js"></script>
+		    
+		    <!-------------------- END OF REPORT --------------------------------->
+		    
+		    <div class="container formclosure">
+		        <a href="#close" title="Close" id="closeb6" class="button">Close</a>
+		    </div>
+	    </div>
+    </div>
+    
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------>
+    
+    <!-----REPORT 7:-->
+    
+    <div id="report7" class='modalDialog'>
+        <div class="reportcontent">
+            
+            <!---------------------- REPORT HEADER  ----------------------->
+            
+		    <h2>Yearly Sales Comparison</h2>
+		    <h3>Description:</h3>
+		    <p>This report compares between the sales number for a preselected period during the current year to that of corresponding period in a selected past year. 
+		    Selection of the benchmark year, period and category ofcomparison is required</p>
+		    
+		    <!----------------------- OPTIONS SELECTIONS ----------------->
+		    
+		    <div class="reportOptions">
+		        <h3>Selections:</h3>
+		        <form id="report7Selection">
+		            <div class="row">
+		                <div class="col-md-4">
+		                    <p><label for="year" class="formlabel">Select Year:</label></p>
+		                    <select name="year" id="yr">
+                                 <option value="2015">2015</option>
+                                 <option value="2014">2014</option>
+                                 <option value="2013">2013</option>
+                                 <option value="2012">2012</option>
+                            </select>
+		                </div>
+		                <div class="col-md-4">
+		                    <p><label for="category" class="formlabel">Select Category:</label></p>
+		                    <select name="category" id="cat">
+                                 <option value="customer">Customer</option>
+                                 <option value="region">Region</option>
+                                 <option value="product">Product</option>
+                                 <option value="salesperson">Sales Person</option>
+                            </select>
+		                </div>
+		                 <div class="col-md-4">
+		                    <p><label for="period" class="formlabel">Select quarter:</label></p>
+		                    <div id="periodSelector">
+                                <input type="checkbox" name="q1">First Quarter<br>
+                                <input type="checkbox" name="q2">Second Quarter<br> 
+                                <input type="checkbox" name="q3">Third Quarter<br>
+                                <input type="checkbox" name="q4">Fourth Quarter<br>
+                            </div>
+		                </div>
+		            </div>
+		        </form>
+		        <div class="execute">
+                    <button type="button" id="run7" class="btn btn-default btn-lg btn-block mainbutton">Run Report</button>
+                </div>
+		    </div>
+		    
+		    <!-------------------- RESULTS DISPLAY ------------------------------>
+		    
+		    <div class="selectionSummary">
+		       
+		    </div>
+		    <div id="reportGraph">
+                <div class="graph7"></div>
+            </div>
+		    <div class="resultTable7">
+                <table id="result7" class="display" width="90%"></table>
+		    </div>
+		    <div class="reset">
+                <button type="button" id="reset7" class="btn btn-default btn-lg btn-block mainbutton">Reset Report</button>
+            </div>
+		    
+		    <!--Report specific script -->
+		    <script src="js/report7.js"></script>
+		    
+		    <!-------------------- END OF REPORT --------------------------------->
+		    
+		    <div class="container formclosure">
+		        <a href="#close" title="Close" id="closeb7" class="button" onclick = "#marketing">Close</a>
+		    </div>
+	    </div>
+    </div>
+    
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------>
+    
+    <!-----REPORT 8:-->
+    
+    <div id="report8" class='modalDialog'>
+        <div class="reportcontent">
+		    <h2>Modal Box 8</h2>
+		    <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+		    <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+		    <div class="container formclosure">
+		        <a href="#close" title="Close" id="closeb8" class="button">close</a>
+		    </div>
+	    </div>
+    </div>
+    
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------>
+    
+    <!-----REPORT 9:-->
+    
+    <div id="report9" class='modalDialog'>
+        <div class="reportcontent">
+		    <h2>Modal Box 9</h2>
+		    <h4>Description:</h4>
+		    <p>This report compares between the sales number for the current year to that of a selected past year. Selection of the benchmark year, period and category of
+		    comparison is required</p>
+		    <div class="container formclosure">
+		        <a href="#close" title="Close" id="closeb9" class="button">close</a>
+		    </div>
+	    </div>
+    </div>
+</html>

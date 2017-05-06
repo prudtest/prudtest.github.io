@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        
+        <!-- Making the mobile view not so bad -->
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- Some other attibutes for the project -->
+        <meta charset="utf-8">
+        <meta name="description" content="Prudan Website - CS50 project">
+        <meta name="author" content="Hany Bassily">
+        
+        <title>PrudAn: Main</title></title>
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        
+        <!-- Styling links -->
+        <link href="/css/styles.css" rel="stylesheet"/>
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+        
+        <!-- Some google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Stalinist+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        
+        <!-- Pachage Scripts -->
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/d3.js"></script>
+        <script src="/js/d3.min.js"></script>
+        <script src="/js/d3.tip.v0.6.3.js"></script>
+        
+        <!--Mail Script -->
+        <script src="/js/scripts.js"></script>
+        
+        
+    </header>
+    
+    <body class>
+        <ul class="nav-bar">
+            <li><a class="active" href="#about">Home</a></li>
+            <li><a class="active" href="#products">Products</a></li>
+            <li><a class="active" href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="fixed-header">
+            <div class="custom-header">
+                    <div class="company">PrudAn</div>
+            </div>    
+        </div>
+        
+        <!-- About Us div -->
+        <div class="page-content" id="about">
+            <div class="divheader">Who we are</div>
+            <div class="aboutIntro">
+                <p>We are a highly experienced and motivated group of industry oriented data scientists and business consultants. 
+                Our expertise spans data analytics, machine learning and business management. All our experts have a deep industrial 
+                experience in diverse fields that includes (among others) Oil and Gas, Power generation, Automotive, Retail, 
+                Financial, Healthcare and Food & Beverage</p>
+                
+                <p>Our experience is involved in many aspects of business activity including Operations, Supply Chain, 
+                Manufacturing, Services, IT, Finance and Sales & Marketing</p>
+                
+                <p>All our consultants average 15 years experience is in both Fortune 100 as well as small and midsize compamies. 
+                <strong>We cover it all!</strong></p>
+                
+            </div>
+            <div class = "aboutInfo">
+                <table>
+                    <tr>
+                        <div class="itemTabIm">
+                            <img src="../img/Mission.jpg">
+                            <a href="#about1" class="productlink" data-toggle="modal" data-target="#about1">
+                                <h3>Our Mission</h3>
+                            </a>
+                        
+                        </div>
+                    </tr>
+                    <tr>
+                       <div class="itemTabIm">
+                            <img src="../img/strategy.jpg">
+                            <a href="#about2" class="productlink" data-toggle="modal" data-target="#about2">
+                                <h3>How we do it</h3>
+                            </a>
+                        </div>
+                    </tr>
+                    <tr>
+                      <div class="itemTabIm">
+                            <img src="../img/Means.jpg">
+                            <a href="#about3" class="productlink" data-toggle="modal" data-target="#about3">
+                                <h3>What we offer</h3>
+                            </a>
+                        
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Products div -->
+        <div class="page-content" id="products">
+            <div class="divheader">Products</div>
+            <div class="productPage">
+                <div class="container product-list">
+                    <div class = "row">
+                        <div class="col-lg-12 text-left prodintro">
+                            <p><h4>Our products span three different business aspects: Database systems and Management, Data analytics 
+                            platform implementation and management consultancy</h4></p>
+                            <p><h4>All our products are highly tailored to your specific needs. We deliver, support and optimize
+                            their performance</h4></p>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class="col-md-3 col-sm-6 product-item">
+                            <img src="../img/data.jpg" class="img-responsive">
+                            <a href="#product1" class="productlink" data-toggle="modal" data-target="#product1">
+                                <h3>Data Systems</h3>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 product-item">
+                            <img src="../img/anal.jpg" class="img-responsive">
+                            <a href="#product2" class="productlink" data-toggle="modal" data-target="#product2">
+                                <h3>Analytics Platform</h3>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 product-item">
+                            <img src="../img/Bus.jpg" class="img-responsive">
+                            <a href="#product3" class="productlink" data-toggle="modal" data-target="#product3">
+                                <h3>Management Consulting</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Us div -->
+        <div class="page-content" id="contact">
+            <div class="divheader">Contact Us</div>
+            <div class="contactInfo">
+                <p><h3>Prudan LLC</h3></p>
+                <p><span class="infoElem">Address:</span> 1809 E Broadway Street, Suite 143, Oviedo, FL 32765</p>
+                <!--<p><span class="infoElem">Phone Number:</span> 407-704-9637</p> -->
+            </div>
+            <div class="emailforms">
+                <form id="mailingform">
+                    <div>
+                        <p><span class="infoElem">E-mail info@prudan.com</span></p>
+                        <p><label for="name" class="formlabel">Name:</label></p>
+                        <p><input type="text" id="custname" autocomplete="off" name="custname" class="entryfield" required></p>
+                    </div>
+                    <div>
+                        <p><label for="email" class="formlabel">Email:</label></p>
+                        <p><input type="email" id="email" autocomplete="off" name="email" class="entryfield" required></p>
+                    </div>
+                    <div>
+                        <p><label for="phone" class="formlabel">Phone Number:</label></p>
+                        <p><input type="text" id="custphone" autocomplete="off" name="custphone" class="entryfield" required></p>
+                    </div>
+                    <div>
+                        <p><label for="message" class="formlabel">Message:</label></p>
+                        <p><textarea class="form-control" id="message" name="message" required></textarea></p>
+                    </div>
+                    <div class="submitbutton">
+                        <button class="btn btn-default" type="submit">Send</button>
+                        <button class="btn btn-default" type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    
+    <!----------------------------------------------------------------------------------------------->
+    
+    <!-- About Details Modals -->
+    
+    <div class="modal fade" id="about1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">Our Mission</h3>
+                </div>
+                <div class="aboutimage">
+                    <img src="../img/Mission.jpg" class="img-rounded">
+                </div>
+                <div class="modal-body">
+                    <p><strong>We turn data into insights, live:</strong>Our smart analytics platform extracts data in any format 
+                    from variable sources and turn it into insights that enables making better and faster business decisions</p>
+                    <p><strong>We connect organizations for better collaboration:</strong>Our platform uses existing systems, mines 
+                    data from all sources and produce insights in one location that is accessible by only authorized users. 
+                    No matter the data volume or the number of users. Business decisions will no longer be made in silos</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="about2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">How we do it</h3>
+                </div>
+                <div class="aboutimage">
+                    <img src="../img/strategy.jpg" class="img-rounded">
+                </div>
+                <div class="modal-body">
+                    <p>We integrate our smart analytics solution based on state of the art machine learning techniques into your 
+                    process and make it native to your system, taking advantage of your already existing infrastructure.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="about3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">What we offer</h3>
+                </div>
+                <div class="aboutimage">
+                    <img src="../img/Means.jpg" class="img-rounded">
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Assess big data analytics application to your unique business process</li>
+                        <li>Custom design analytics solution based on advanced machine learning (conventional and deep learning) and statistical techniques</li>
+                        <li>Integrate solution into your business process and systems</li>
+                        <li>Our solutions are scalable, adaptable and applicable to any business situations</li>
+                        <li>Our experienced consultants will optimize your business process in order to maximize your revenues and minimize your costs</li>
+                        <li>Don’t have much systems in place? No worries, we offer complete solutions</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Product Description Modals --> 
+    
+    <div class="modal fade" id="product1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">Data Systems</h3>
+                </div>
+                <div class="productimage">
+                    <img src="../img/data.jpg" class="img-rounded">
+                </div>
+                <div class="modal-body">
+                    <h4>Description:</h4>
+                    <p>Based on your existing infrastructure we provide an optimum architecture for your database that 
+                    is totally scalable to your data volume and more importantly your budget.  
+                    We implement the architecture and activate your platform for efficient data mangement and analytics. We provide you 
+                    with all necessary support to optimize your database performance and data flow</p>
+                    <h4>Main Features:</h4>
+                    <ul>
+                        <li>Tailored to your needs</li>
+                        <li>Highly optimized</li>
+                        <li>Based on a thorough analysis of your business needs and current infrastructure</li>
+                        <li>Fully scalable to the evolution of your business and your budget</li>
+                    </ul>
+                    <p>For more details, please <a href="#contact">Contact Us.</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="product2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">Analytics Platform</h3>
+                </div>
+                <div class="productimage">
+                    <img src="../img/anal.jpg" class="img-rounded">
+                </div>
+                <div class="modal-body">
+                    <h4>Description:</h4>
+                    <p>We develop a solution based on state of the art Machine Learning and statistical techniques. We develop 
+                    the necessary software and/or procedure which is totally tailored to your specific need. We do not bring to you 
+                    an "off the shelf" solution. We present to you the best implementation plan that fits your needs
+                    and your finance. We support it, maintain it and assist you in efficiently benefit from it</p>
+                    <h4>Main Features:</h4>
+                    <ul>
+                        <li>Tailored to your needs</li>
+                        <li>Highly optimized</li>
+                        <li>Based on a thorough analysis of your specific business requirements and workflow</li>
+                        <li>Fully supported by our experts</li>
+                    </ul>
+                    <p>For more details, please <a href="#contact">Contact Us.</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="product3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">Management Consulting</h3>
+                </div>
+                <div class="productimage">
+                    <img src="../img/Bus.jpg" class="img-rounded">
+                </div>
+                <div class="modal-body">
+                    <h4>Description:</h4>
+                    <p>We assess your business processes and transform operations in order to reduce cost and improve speed.
+                    Our consultants are experts in business process excellence and lean deployment in wide range of industries and 
+                    business activities.</p>
+                    <h4>Main Features:</h4>
+                    <ul>
+                        <li>Experts opinion</li>
+                        <li>Based on a thorough analysis of your business needs</li>
+                        <li>Fully supported by our experts throughout its life cycle</li>
+                    </ul>
+                    <p>For more details, please <a href="#contact">Contact Us.</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
